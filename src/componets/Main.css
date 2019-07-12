@@ -1,0 +1,156 @@
+:root {
+  --fontSize: 30px;
+  --textMargin: 0.8em 0;
+  --boxPadding: 1em;
+  --textPadding: 5px 0;
+  --defaultBgColor: #f6f6f6;
+  --secondaryColor: #000;
+  --primary: rgb(221, 221, 221);
+  --shadow: 0 2px 2px 0 #8a5e1dc4, 0 3px 1px -2px #8a5e1db0,
+    0 1px 5px 0 #8a5e1dc4;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+li {
+  font-family: 'Oswald', sans-serif;
+  list-style: decimal;
+  padding: 2px 10px;
+  text-align: left;
+  margin: 0 10px;
+}
+.Showcase {
+  height: 35vh;
+  display: flex;
+  background: url('../Assets/showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 2px solid #8a5e1d;
+  position: relative;
+}
+.Overlay {
+  background: #8a5e1d73;
+  width: 100%;
+  display: flex;
+}
+.About {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border: 2px solid #8a5e1d;
+  border-radius: 34px;
+  padding: 6px 13px;
+  text-decoration: none;
+}
+.Link {
+  color: #000;
+}
+.ShowcaseItems {
+  margin: auto;
+  font-family: monospace;
+}
+.ShowcaseItems h1 {
+  font-size: 30px;
+  color: #ffffffce;
+}
+
+input,
+button {
+  padding: 5px 10px;
+  font-size: 1.3em;
+  outline: none;
+  margin: 0.2em;
+  border: none;
+  padding: 6px 10px;
+}
+button {
+  border-top-right-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+input {
+  border-top-left-radius: 34px;
+  border-bottom-left-radius: 34px;
+}
+.Container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: var(--boxPadding);
+  box-shadow: var(--shadow);
+  background: var(--primary);
+  min-height: 50vh;
+  margin-bottom: 30px;
+  position: relative;
+}
+.Recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-gap: 20px;
+}
+.Box {
+  box-shadow: var(--shadow);
+  padding-bottom: 1em;
+  position: relative;
+}
+ul {
+  padding: 2em;
+  transition: all 0.5s;
+}
+.FoodName {
+  margin: 1em 0 2em 0;
+}
+.Button {
+  padding: 4px 15px;
+  font-size: 1.2em;
+  outline: none;
+  color: #8a5e1d;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+footer {
+  height: calc(100vh - 92vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8a5e1db7;
+  color: var(--defaultBgColor);
+  font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 400px) {
+  input,
+  button {
+    padding: 5px 6px;
+    font-size: 1.1em;
+    outline: none;
+    margin: 0.1em;
+  }
+  .Brand {
+    font-size: 20px;
+  }
+  .About {
+    position: absolute;
+    right: 1em;
+    top: 15.8em;
+    padding: 5px 19px;
+  }
+}
